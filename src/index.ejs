@@ -1,11 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TIENDA WIL</title>
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
-    
+   <header class="header">
+      <input type="checkbox" class="header__checkbox" id="open__menu">
+      <label for="open__menu" class="header__nav-open-button" role="button">
+         <i class="material-symbols-outlined">menu</i>
+      </label>
+      <div class="header__logo-container">
+         <img class="header__logo" src="img/logo.png" alt="logoWil">
+      </div>
+
+      <nav class="header_nav-container">
+         <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="#">Inicio</a></li>
+            <li class="header__nav-item"><a href="#">Productos</a></li>
+            <li class="header__nav-item"><a href="#">Carrito</a></li>
+            <li class="header__nav-item"><a href="#">Contacto</a></li>
+            <li class="header__nav-item"><a href="practica/login/LoginRegister.html">Login</a></li>
+         </ul>
+      </nav>
+   </header>
+   
+   <aside class="aside">
+      <div class="aside__container-eslogan">
+         <h2 class="aside__eslogan">POTENCIA TU VIDA CON TECNOLOGIA</h2>
+         <button class="aside__viewProducts">VER PRODUCTOS</button>
+      </div>
+      <div class="aside__container-img">
+         <img class="aside__img" src="img/image 9.png" alt="imagenNave">
+      </div>
+   </aside>
+
+   <div class="promo">
+      <h4 class="main__button-promo">PRODUCTOS CON PROMOCIONES</h4>
+   </div>
+   
+
+   <main class="main">
+
+      <div class="main__slider">
+         <div class="slider--item">
+            <img src="img/airpods.png" alt="producto1">
+            <p>LENTES LED</p>
+         </div>
+         <div class="slider--item">
+            <img src="img/lentes.png" alt="producto2">
+            <p>LUCES LED</p>
+         </div>
+         <div class="slider--item">
+            <img src="img/robot_wil 1.png" alt="producto3">
+            <p>AIRPODS</p>
+         </div>
+         <div class="slider--item">
+            <img src="producto4.png" alt="producto4">
+            <p>DRON</p>
+         </div>
+
+         <button id="next"> > </button>
+         <button id="prev"> < </button>
+      </div>
+
+   </main>
+
+   <div class="boton__prod">
+      <button class="aside__viewProducts">VER PRODUCTO</button>
+   </div>
+   
+
+   <footer class="footer">
+      <div class="footer__container">
+         <div class="footer__container-acerca">
+            <h3 class="footer__acerca-title">ACERCA DE</h3>
+            
+            <ul class="footer__acerca-links">
+               <li class="links-footer">
+                  <a href="#">Acerca de nosotros</a>
+               </li>
+               <li class="links-footer">
+                  <a href="#">Medios de Contactos</a>
+               </li>
+               <li class="links-footer">
+                  <a href="#">Politicas</a>
+               </li>
+   
+            </ul>
+         </div>
+   
+         <div class="footer__container-redes">
+            <h3 class="footer__redes-title">
+               <img class="header__logo" src="img/logo.png" alt="logoWil">
+            </h3>
+   
+            <a class="footer__redes-icons" href="#"><i class='bx bxl-instagram'></i></a>
+            <a class="footer__redes-icons" href="#"><i class='bx bxl-twitter'></i></a>
+            <a class="footer__redes-icons" href="#"><i class='bx bxl-youtube' ></i></a>
+            <a class="footer__redes-icons" href="#"><i class='bx bxl-whatsapp'></i></a>
+            <a class="footer__redes-icons" href="#"><i class='bx bxl-facebook-circle' ></i></a>
+            
+         </div>
+   
+         <div class="footer__container-contact">
+            <h3 class="footer__contact-title">CONTACTANOS</h3>
+   
+            <div class="footer__contact-info">
+               <ul class="footer__contact-info-list">
+                  <li class="footer__contact-info-list">+51 999 999 999</li>
+                  <li class="footer__contact-info-list">(01) 999 9999</li>
+                  <li class="footer__contact-info-list">wiloficial@gmail.com</li>
+               </ul>
+            </div>
+            
+         </div>
+      </div>
+   </footer>
+
+   <script src="app.js"></script>
 </body>
 </html>
